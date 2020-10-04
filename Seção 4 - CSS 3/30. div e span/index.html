@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>		
+		<title>Divs e Spans</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			
+			#topo{
+				background: darkblue;
+			}
+
+			#conteudo{
+				background: darkviolet;
+			}
+
+			#rodape{
+				background: green;
+			}
+
+			#assinatura{
+				background: yellow;
+			}
+			
+			.produto{
+				background: grey;
+				margin: 10px;
+			}
+
+			.azul{
+				color: blue;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div id="topo"> <!--elemento block ocupa toda largura da tela (width:100%-->)
+			
+			<img src="imagens/amazon.png" width="200">
+			<ul>
+				<li>Home</li>
+				<li>Produtos</li>
+				<li>Contato</li>
+			</ul>
+
+		</div>
+
+		<div id="conteudo">
+			
+			<div class="produto">
+				Produto 1
+			</div>
+
+			<div class="produto">
+				Produto 2
+			</div>
+
+			<div class="produto">
+				Produto 3
+			</div>
+
+		</div>
+
+		<div id="rodape">
+
+			Todos os <span class="azul">direitos</span> reservados
+
+		</div>
+
+		<span id="assinatura"> <!--elemento inline ocupa apenas o tamanho do elemento-->
+			Ivan
+		</span>
+		<span>
+			Rafael
+		</span>
+
+	</body>
+
+</html>

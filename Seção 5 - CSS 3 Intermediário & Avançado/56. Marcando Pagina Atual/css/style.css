@@ -1,0 +1,37 @@
+/*menu lateral*/
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul a{
+	/*border: 1px solid red;*/
+	display: block; /*<a> é um elemento in-line e nao responde a margin e padding*/
+	width: 200px;
+	height: 40px;
+	text-indent: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #000;
+	background: #f7b600 url('../imagens/menu.png') no-repeat left;
+	/*deixar uma cor de fundo backgroung caso a imagem nao carregue*/
+}
+
+a:hover{
+	color: white;
+	background-position: right bottom;
+	background-color: #f99200;/*cor de fundo caso imagem nao carregue*/
+	/*transition: 300ms;*/
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+	color: white;
+	background-position: right bottom;
+	background-color: #f99200;
+}

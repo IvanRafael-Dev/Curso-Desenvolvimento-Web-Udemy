@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Posicionamento Absoluto e Fixo</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+
+			body{
+				background: #007fc7;
+			}
+			
+			#container{
+				background: #fff;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+				position: relative; /*para receber a posicao do elemento absolute e o manter dentro do conteiner*/
+			}
+
+			h1{
+				/*position: static; static padrao*/
+			}
+
+			p{
+				/*position: static; static padrao*/
+				width: 300px;
+			}
+
+			.fixed{
+				border: 1px solid red;
+				background: #f2f2f2;
+				position: fixed;
+				margin: 20px;
+				bottom: 0px;
+				right: 0px;				
+			}
+
+			.absolute{
+				border: 1px solid red;
+				background: #f2f2f2;
+				position: absolute;
+				top: 70px; /*baseado no container que estiver com uma posicao nao estatica (relativa, absoluta ou fixa), caso o conteiner for estatico o elemento se baseia no corpo da pagina saindo do container*/
+				right: 20px;
+			}
+
+			.relative{
+				border: 1px solid red;
+				position: relative;
+				/*top, right, bottom e left*/
+				top: 10px; /*positivos ou negativos*/
+				left: 200px;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div id="container">
+			<h1>Posicionamento</h1>
+			<p>P1. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p class="absolute">P2. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p class="fixed">P3. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p>P4. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p>P5. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p>P6. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p>P7. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p>P8. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p>P9. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p>P10. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+
+			<p>P11. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiciatis unde omnis iste natus error sit.</p>
+		</div>
+
+	</body>
+</html>

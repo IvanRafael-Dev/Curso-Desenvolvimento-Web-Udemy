@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mais sobre Seletores</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+
+	<body>
+
+		<ul>
+			<li>
+				<span>
+					<a href="">nao é filho</a><!-- elemento nao é filho de <li>-->
+				</span>				
+			</li>
+			<li>
+				<a href="">elemento filho</a> <!-- elemento filho de <li>-->
+			</li>
+		</ul>
+
+		<a href="">Link Teste</a>
+		<div>
+			<h2>Titulo</h2>
+			<p>
+				paragrafo <a href="">link descendente da div</a>
+			</p>
+		</div>
+
+		<div id="cabecalho">
+			<h1>Titulo DIV</h1>
+			<p>Paragrafo 1 da DIV (irmao adjacente de h1)</p>
+			<p>Paragrafo 2 da DIV (nao é irmao adjacente)</p>
+			<h3>Titulo h3</h3>
+			<p>Paragrafo 1 do seletor de irmao geral</p>
+			<p>Paragrafo 2 do seletor de irmao geral</p>
+			<p>Paragrafo 3 do seletor de irmao geral</p>
+		</div>
+
+		<span class="verde">Teste Span</span>
+		<p class="verde">Teste Paragrafo</p>
+
+
+	</body>
+
+</html>

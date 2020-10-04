@@ -1,0 +1,29 @@
+.conteudo{
+	background: lightblue;
+	border: 2px solid red;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+}
+
+/*.conteudo1{
+	background: lightgreen;
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	float: left; /*left - right - none (flutuante, nao ocupa o mesmo espaco, fica acima*/
+
+
+.clear{
+	clear: left;
+	border: 1px solid red;
+	
+}
+
+#principal{
+	background: gray;
+	width: 700px;
+	border: 2px solid red;
+}

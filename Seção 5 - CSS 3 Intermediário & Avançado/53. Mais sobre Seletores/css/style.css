@@ -1,0 +1,48 @@
+/* seletor universal, aplica-se em todos os documentos */
+/**{
+	border: 1px solid red;
+}
+
+/* seletor de texto */
+h1{
+	color: violet;
+}
+
+/* seletor de classe, seleciona um elemento cujo 
+atributo class tem o valor especificado depois do ponto */
+.verde{
+	color: green;
+}
+
+p.verde{
+	color: green;
+}
+
+/*seletor de ID */
+#cabecalho{
+	border: 3px solid blue;
+}
+
+/* seletor de filho */
+li>a{
+	color: red;
+	text-decoration: none;
+}
+ /* seletor de descentende, nao precisa ser filho direto */
+div a{
+ 	color: orange;
+}
+
+ /* seletor de irmao adjacente, seleciona um elemento que é 
+ o irmão próximo de outro */
+
+h1+p{
+ 	color: red;
+}
+
+/* seletor de irmao geral, selecionar os elementos irmaos,
+nao precisa ser diretamente precedente */
+
+h3~p{
+	color: darkblue;
+}

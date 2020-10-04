@@ -1,0 +1,43 @@
+/* heranca e especificidade*/
+/*formatacao que será herdada por todos os elementos*/
+/*por padrao, border e background nao sao herdados*/
+
+body{ 				
+	color: red;			
+	border: 1px solid red;
+}
+
+/* no geral, definimos especificacoes genericas para todo o corpo, e
+vamos especificando depois os detalhes de cada coisa*/
+
+/*para seletores iguais o ultimo tem a preferencia*/
+
+#pagina p{
+	color: violet !important; /* a nao ser que seja usado o !important; (tentar nao
+								utilizar ou tilizar com cautela)*/
+}
+
+#pagina p{
+	color: blue;
+}
+
+/* se um seletor for mais especifico que outro, a regra mais especifica sera aplicada
+ e terá precedencia sobre regras mais gerais*/
+
+*{  /* esse seletor geral esta sendo sobreescrito pelos seletores mais especificos*/
+	color: black;
+}
+
+/*do menos especifico para o mais*/
+
+h2{ /*3*/
+	color: pink;
+}
+
+h2.verde{ /*2*/
+	color: green;
+}
+
+h2#amarelo{ /*1*/
+	color: yellow; 
+}
