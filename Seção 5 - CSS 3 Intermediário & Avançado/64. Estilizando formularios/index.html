@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Estilizando Formularios</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<h2>Estilizando formulários</h2>
+
+		<form>			
+			<fieldset> <!-- agrupar dados semelhantes--> 
+				<legend>Detalhes de contato</legend> <!-- uma legenda para esse grupo de dados semelhantes-->	
+					<div>
+						<label for="nome">Nome:</label> <!-- label(rotulo), etiqueta para identificar caixas de texto
+						o atributo 'for' junto com o 'id' do input, associa o label ao input, recurso importante para acessibilidade-->
+						<input type="text" name="nome" id="nome"><!-- 'for' e 'id' devem ter o mesmo valor-->
+				   </div>
+				   <div>
+						<label for="e-mail">Email:</label>
+						<input type="text" name="e-mail" id="e-mail">
+				   </div>
+				   <div>
+						<label for="url">URL:</label>
+						<input type="text" name="url" id="url">
+				   </div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Comentários</legend>
+					<div>
+						<label for="mensagem">Mensagem:</label>
+						<textarea name="mensagem" id="mensagem"></textarea>
+					</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Lembrar de mim</legend>
+					<div>
+						<label>
+							<input class="radio" type="radio" name="lembrar" id="sim">Sim
+						</label>
+					</div>
+
+					<div>
+						<label>
+							<input class="radio" type="radio" name="lembrar" id="nao">Não
+						</label>
+					</div>
+			</fieldset>	
+		</form>
+	</body>
+</html>

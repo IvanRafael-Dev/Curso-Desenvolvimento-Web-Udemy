@@ -1,0 +1,45 @@
+/***Estilizando Tabelas***/
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table{
+	width: 600px;
+	border-collapse: collapse; /*retira os espacos entre as bordas das th, td*/
+
+}
+
+th, td{	
+	padding: 7px;
+}
+
+th{
+	text-transform: uppercase; /*todas letras maiusculas*/
+	border-top: 0.05em solid #999;
+	border-bottom: 0.1em solid #111;
+	text-align: left;
+	font-size: 90%; /*90% do tamanho original*/
+	letter-spacing: 0.1em; /*espaco entre letras 0.1 <*/
+}
+
+.produtos{
+	text-align: center;
+}
+
+tr.alternado{
+	background-color: #efefef;
+}
+
+.numero{
+	text-align: right;
+}
+
+tr:hover{
+	background-color: #afafaf;
+}
+
+td:hover, th:hover{
+	background-color: #8f8f8f;
+	
+}

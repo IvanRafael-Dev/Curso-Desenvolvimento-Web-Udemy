@@ -1,0 +1,48 @@
+/**estilizando formularios***/
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+fieldset {
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
+}
+
+legend{
+	font-weight: bold;
+}
+
+label{ /* por padrao é um elemento in-line*/
+	display: block; 
+	cursor: pointer;
+}
+
+/* recurso novo mas ainda sem suporte para navegadores antigos
+input[type="text"]{ /* '[]' seletor de atributo, 'apenas os inputs de type "text"'
+	width: 20em;
+} */
+
+input{
+	width: 20em;
+}
+
+textarea{
+	width: 20em;
+	height: 10em;
+}
+
+/*
+input[type="radio"]{
+	margin-right: 10px;
+}*/
+
+input.radio, input.checkbox, input.submit{
+	width: auto;
+}
+
+.radio{
+	margin-right: 1em;
+}
